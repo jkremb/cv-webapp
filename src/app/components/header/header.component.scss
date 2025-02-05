@@ -3,8 +3,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
   border-bottom: 4px solid #FF00FF;
+  box-shadow: 
+    0 2px 15px rgba(255, 0, 255, 0.3),
+    0 -5px 15px rgba(0, 255, 0, 0.3);
   padding: 1rem;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
@@ -26,12 +29,13 @@ header {
       padding: 0.5rem 1rem;
       border: 2px solid #00FF00;
       text-transform: uppercase;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
       
       &:hover {
         background: #00FF00;
         color: #000000;
         transform: scale(1.1);
-        transition: all 0.2s;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
       }
     }
   }
