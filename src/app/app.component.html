@@ -1,49 +1,10 @@
-<header [class.hidden]="!isHeaderVisible">
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience & Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<app-header [isHeaderVisible]="isHeaderVisible"></app-header>
 
 <main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer with a keen interest in creating elegant solutions to complex problems. 
-       I believe in writing clean, maintainable code and constantly learning new technologies.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Frontend Development: Angular, React, TypeScript</li>
-      <li>Backend Development: Node.js, Python</li>
-      <li>Database: MongoDB, PostgreSQL</li>
-      <li>Tools: Git, Docker, AWS</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience & Education</h2>
-    <div class="experience-item">
-      <h3>Senior Developer - Tech Corp</h3>
-      <p>2020 - Present</p>
-      <p>Led development of multiple full-stack applications using Angular and Node.js.</p>
-    </div>
-    <div class="education-item">
-      <h3>BSc Computer Science</h3>
-      <p>University of Technology</p>
-      <p>2015 - 2019</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: example@email.com</p>
-    <p>LinkedIn: linkedin.com/in/example</p>
-    <p>GitHub: github.com/example</p>
-  </section>
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-experience></app-experience>
+  <app-contact></app-contact>
 </main>
 
 <router-outlet></router-outlet>

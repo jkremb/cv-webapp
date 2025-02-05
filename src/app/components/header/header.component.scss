@@ -1,0 +1,38 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  border-bottom: 4px solid #FF00FF;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+    a {
+      text-decoration: none;
+      color: #00FF00;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid #00FF00;
+      text-transform: uppercase;
+      
+      &:hover {
+        background: #00FF00;
+        color: #000000;
+        transform: scale(1.1);
+        transition: all 0.2s;
+      }
+    }
+  }
+} 

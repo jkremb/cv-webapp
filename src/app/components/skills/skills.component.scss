@@ -1,0 +1,36 @@
+section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 8px solid #000000;
+  margin: 2rem;
+  background: #FF00FF;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      color: #000000;
+      background: #00FF00;
+      padding: 1rem;
+      border: 4px solid #000000;
+      transform: rotate(1deg);
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05) rotate(-1deg);
+      }
+    }
+  }
+} 
